@@ -1,0 +1,214 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+.list-item:hover {
+    cursor: pointer;
+}
+
+.hide {
+    height: 0;
+    opacity: 0;
+}
+
+.super-hide {
+    display: none;
+}
+
+/* regular css */
+
+.nav {
+    height: 10rem;
+    position: relative;
+    font-size: 1.6rem;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    box-shadow: 0 2px 2px rgba(220, 220, 220, .8);
+}
+
+.nav-list,
+.nav-drop,
+.nav-title {
+    position: absolute;
+    justify-content: space-around;
+}
+
+.nav-title {
+    top: 3rem;
+    left: 5rem;
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 1.3px;
+}
+
+.nav-list {
+    top: 3rem;
+    right: 5rem;
+    width: 50%;
+}
+
+.nav-list-item {
+    width: 100%;
+    text-align: center;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
+}
+
+.nav-list-item:not(:last-child) {
+    border-right: 1px solid rgb(220, 220, 220);
+}
+
+.nav-list-item:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.nav-drop:before {
+    content: "";
+    border-bottom: 1rem solid rgb(220, 220, 220);
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    height: 3px;
+    position: absolute;
+    right: 45rem;
+    top: -1.2rem;
+    width: 0;
+}
+
+.nav-drop {
+    z-index: 1000;
+    top: 10rem;
+    right: 0;
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(220, 220, 220);
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+}
+
+.sub-list-item {
+    border-bottom: 1px solid black;
+    transition: transform .3s ease;
+    -webkit-transition: transform .3s ease-out;
+    -moz-transition: transform .3s ease-out;
+    -o-transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
+
+.sub-list-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 3px rgba(20, 20, 20, .8);
+
+}
+
+.sub-list-item:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px rgba(20, 20, 20, .8);
+}
+
+.feedback-button {
+    position: absolute;
+    top: 60%;
+    left: 43%;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color: #888;
+    border: 1px solid rgb(220, 220, 220);
+    transition: transform .3s ease;
+    -webkit-transition: transform .3s ease-out;
+    -moz-transition: transform .3s ease-out;
+    -o-transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
+
+.feedback-button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 3px rgba(20, 20, 20, .8);
+}
+
+.feedback-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px rgba(20, 20, 20, .8);
+}
+
+.feedback-modal-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(220, 220, 220, .6);
+    z-index: 2000;
+}
+
+.feedback-modal {
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 28rem;
+    width: 33rem;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(20, 20, 20, .6);
+    z-index: 3000;
+}
+
+.feedback-modal-title {
+    margin-top: 3rem;
+    font-size: 2rem;
+
+}
+
+.feedback-modal-text {
+    margin-top: 2rem;    
+}
+
+.feedback-modal-text textarea {
+    border: 1px solid rgb(20, 20, 20);
+    padding: 1rem;
+    width: 80%;
+    height: 10rem;
+}
+
+.feedback-modal-submit {
+    margin-top: .5rem;
+    border: 1px solid rgb(20, 20, 20);
+    padding: .5rem 1rem;
+    width: 80%;    
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.8rem;
+}
+
+.close:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Navigation Menu </title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="nav flex">
+
+        <h2 class="nav-title"> Cam's Car Castle </h2>
+
+        <div> 
+            <ul class="nav-list list flex">
+                <li class="nav-list-item list-item"> Home </li>
+                <li id="inventory" class="nav-list-item list-item"> Inventory </li>
+                
+                <li class="nav-list-item list-item"> About Us </li>
+                <li class="nav-list-item list-item"> Contact </li>
+            </ul>
+        </div>
+
+        <div> 
+            <ul class="nav-drop list flex hide">
+                <li class="sub-list-item list-item"> New </li>
+                <li class="sub-list-item list-item"> Used </li>
+                <li class="sub-list-item list-item"> Cars </li>
+                <li class="sub-list-item list-item"> Trucks </li>
+                <li class="sub-list-item list-item"> SUVs</li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="feedback">
+        <div class="feedback-button"> Click here to give us feedback </div>
+        <div class="feedback-modal-background super-hide">
+            <form class="feedback-modal"> 
+                <div class="close"> X </div>
+                <div class="feedback-modal-title"><label> Tell us your thoughts! </label></div>
+                
+                <div class="feedback-modal-text"><textarea ></textarea> </div>
+                <div ><button class="feedback-modal-submit"> Submit </button></div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
